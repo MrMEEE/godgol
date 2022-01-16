@@ -12,6 +12,31 @@ Jeg vil forsøge at få så mange af dem som muligt til at køre på Linux (unde
 
 Fokus er at det skal være nemt for alle at installere og køre disse klassikere, så også den nye generation kan få glæde af dem..
 
+## Teknologier
+
+### Virtuelle CD'er
+Generelt har jeg lavet images af alle mine gamle cd'er, og den bedste måde
+jeg har fundet at oprette disse images er med Alcohol 52%
+(http://shop.alcohol-soft.com/buynow_52.php)
+
+Alcohol 52% er desværre kun til Windows :(.. men tilgengæld får den
+kopibeskyttelsen med på langt de fleste cd'er..
+
+På Linux bruger jeg så cdemu (https://cdemu.sourceforge.io/) til at oprette
+de virtuelle cdrom drev, fra Alcohol 52%'s MDF/MDS filer..
+
+På et tidspunkt skal jeg nok laver en dybere guide, men den hurtige er her
+(til Ubuntu)
+
+```
+sudo add-apt-repository ppa:cdemu/ppa
+
+sudo apt -y install cdemu
+
+cdemu load 0 <*.mds fil>
+
+```
+
 ## Spil
 
 Ingen endnu, men de kommer løbende...
@@ -52,3 +77,4 @@ licensbetingelser på disse..
 
 https://archive.org/details/fav-connorworksarchive
 https://archive.org/details/@jamesoft?tab=uploads
+https://archive.org/details/@duffadash_gmail_com
