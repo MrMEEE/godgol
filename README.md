@@ -39,7 +39,7 @@ cdemu load 0 <*.mds fil>
 
 ## Spil
 
-Ingen endnu, men de kommer løbende...
+Kig i mapperne :)
 
 
 ## Licenser
@@ -59,6 +59,7 @@ Jeg vil løbende forsøge at kontakte Licensholderne, og spørge om:
 Foreløbig har jeg taget kontakt til:
   * Egmont, der tidligere har opkøbt Pixeline, Flunkerne mfl af KREA Medie.
     [Se svar fra Egmont her](Kommunikation/Egmont)
+    [Se svar om kopibeskyttelse fra Egmont her](Kommunikation/Egmont2)
 
 
 ## Hjælp
