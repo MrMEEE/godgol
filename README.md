@@ -69,7 +69,9 @@ Jeg vil MEGET gerne have hjælp, så hvis der er nogen derude som vil hjælpe, s
 ## Interessante Links
 
 https://wiki.winehq.org/Useful_Registry_Keys
-https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
+
+https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 
+Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
 
 ## Downloads
 
