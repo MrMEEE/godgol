@@ -68,10 +68,9 @@ Jeg vil MEGET gerne have hjælp, så hvis der er nogen derude som vil hjælpe, s
 
 ## Interessante Links
 
-https://wiki.winehq.org/Useful_Registry_Keys
-
-https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 
-Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
+* https://wiki.winehq.org/Useful_Registry_Keys
+* https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 
+  - Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
 
 ## Downloads
 
@@ -79,6 +78,6 @@ Jeg er ikke klar over følgende er officielt frigivet, men der ligger mange
 af Pixeline og andre på Archive.org.. På sigt vil jeg grave ned i
 licensbetingelser på disse..
 
-https://archive.org/details/fav-connorworksarchive
-https://archive.org/details/@jamesoft?tab=uploads
-https://archive.org/details/@duffadash_gmail_com
+* https://archive.org/details/fav-connorworksarchive
+* https://archive.org/details/@jamesoft?tab=uploads
+* https://archive.org/details/@duffadash_gmail_com
