@@ -5,9 +5,10 @@ slug: dlphemmeligmission
 runner: wine
 
 script:
-  imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/loaddisk.sh
-  imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/unloaddisk.sh
-  imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/config
+  files:
+  - imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/loaddisk.sh
+  - imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/unloaddisk.sh
+  - imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/config
   
   game:
     exe: $GAMEDIR/drive_c/PANTER/pptp.exe
@@ -48,24 +49,32 @@ script:
       name: wineexec
       working_dir: $DISC
 
-  - task:
+  - move:
       description: Installing ISO/Image load script
       dst: $GAMEDIR/loaddisk.sh
       src: imageloadscript
 
-  - task:
+  - move:
       description: Installing ISO/Image unload script
       dst: $GAMEDIR/unloaddisk.sh
       src: imageunloadscript
 
-  - task:
+  - move:
       description: Installing ISO/Image config file
       dst: $GAMEDIR/config
       src: imageconfigfile
+
+  - chmodx: $GAMEDIR/loaddisk.sh
+
+  - chmodx: $GAMEDIR/unloaddisk.sh
+
   system: 
     xephyr: 16bpp
     xephyr_resolution: 640x480
     reset_desktop: true
     resolution: 640x480
+    prelaunch_command: $GAMEDIR/loaddisk.sh
+    prelaunch_wait: true
+    postexit_command: $GAMEDIR/unloaddisk.sh
  
   wine: {} 
