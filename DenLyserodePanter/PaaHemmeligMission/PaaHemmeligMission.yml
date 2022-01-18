@@ -5,6 +5,10 @@ slug: dlphemmeligmission
 runner: wine
 
 script:
+  imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/loaddisk.sh
+  imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/unloaddisk.sh
+  imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/config
+  
   game:
     exe: $GAMEDIR/drive_c/PANTER/pptp.exe
     prefix: $GAMEDIR/
@@ -34,7 +38,7 @@ script:
   - task:
       arch: win32
       executable: $DISC/setup.exe 
-      description: 'Installere Spillet
+      description: <F11>'Installere Spillet
       
         -------------------------------
         
@@ -44,6 +48,20 @@ script:
       name: wineexec
       working_dir: $DISC
 
+  - task:
+      description: Installing ISO/Image load script
+      dst: $GAMEDIR/loaddisk.sh
+      src: imageloadscript
+
+  - task:
+      description: Installing ISO/Image unload script
+      dst: $GAMEDIR/unloaddisk.sh
+      src: imageunloadscript
+
+  - task:
+      description: Installing ISO/Image config file
+      dst: $GAMEDIR/config
+      src: imageconfigfile
   system: 
     xephyr: 16bpp
     xephyr_resolution: 640x480
