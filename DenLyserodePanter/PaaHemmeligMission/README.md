@@ -12,6 +12,12 @@ eller kan installeres igennem Lutris spil-database:
 
 https://lutris.net/games/the-pink-panther-passport-to-peril/
 
+## Automount af CD image
+
+Hvis du ønsker at få et cd image monteret/afmonteret automatisk når spillet
+starter/lukkes, så kig i config filen i spillets mappe, typisk
+/home/<bruger>/Games/dlphemmeligmission/
+
 ## Problemer med Installer
 
   * Ignore advarsler om 0 MB RAM
