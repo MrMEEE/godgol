@@ -62,6 +62,15 @@ Foreløbig har jeg taget kontakt til:
     - [Se svar om kopibeskyttelse fra Egmont her](Kommunikation/Egmont2)
 
 
+Om brud af kopibeskyttelse:
+
+Fra [Kulturministeriets hjemmeside](https://kum.dk/kulturomraader/ophavsret/computerspil-og-edb-programmer)
+
+  - Et edb-program er ofte belagt med en kopispærring. Kopispærringer kaldes også DRM – Digital Rights Management. Der tilladt at bryde en kopispærring i det omfang, det er nødvendigt for at kunne bruge et program. Personer, der har købt et edb-program, som ikke kan bruges f.eks. på grund af styresystemet på deres computer, er derfor ikke forhindret i at bryde kopispærringen, da det er nødvendigt for at kunne bruge programmet.
+
+Det er altså tilladt at bryde kopibeskyttelsen, hvis den er i vejen for Wine..
+
+
 ## Hjælp
 
 Jeg vil MEGET gerne have hjælp, så hvis der er nogen derude som vil hjælpe, så sig endelig til, eller send et pull request afsted.
