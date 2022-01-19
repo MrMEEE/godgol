@@ -87,6 +87,9 @@ Stor tak til Christian Arvai, der for år tilbage lavede dokumentation om hvorda
 * https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 
   - Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
 
+* https://www.scummvm.org/news/20210817/
+  - På sigt vil Pixiline og sikkert flere andre kunne køre native (uden WINE) på Linux
+
 ## Downloads
 
 Jeg er ikke klar over følgende er officielt frigivet, men der ligger mange
