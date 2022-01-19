@@ -66,6 +66,12 @@ Foreløbig har jeg taget kontakt til:
 
 Jeg vil MEGET gerne have hjælp, så hvis der er nogen derude som vil hjælpe, så sig endelig til, eller send et pull request afsted.
 
+## Referencer
+
+Stor tak til Christian Arvai, der for år tilbage lavede dokumentation om hvordan man kunne afvikle Pixelinespillene, denne dokumentation vil være til stort inspiration, omend jeg nok vil ændre en del.
+
+  - [Christan Arvai's Pixeline Guide](Referencer/Pixelineguide)
+
 ## Interessante Links
 
 * https://wiki.winehq.org/Useful_Registry_Keys

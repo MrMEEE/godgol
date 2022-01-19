@@ -1,0 +1,273 @@
+Guide til installation af Pixeline spil i Ubuntu.
+
+Tak til alle der har hjulpet mig med Pixeline spillene og denne guide ( ingen nævnt - ingen glemt - i ved selv hvem i er ).
+
+Men en specielt tak til Artificial Intelligence, som var den der hjalp mig med den endelige løsning.
+
+Guiden er skrevet af : Christian Arvai
+
+Guiden er sidst blevet ændret : 09-09-2010.
+
+Ændringen var Vedr. : Tilføjet nye spil og testet på Ubuntu 10.04/64 bit.
+
+Kapiteloversigt :
+
+- Indledning
+
+- Wine
+
+- Mappe opbygning
+
+- Kopier spillet fra cd og ind i wine
+
+- Start af exefiler
+
+- Spilliste med testede spil
+
+- Spar harddisk plads efter installering af spillene
+
+- Support til denne guide
+
+Indledning
+
+I denne guide har jeg valgt at bruge Pixeline engelsk - det betyder intet, for fremgangsmåden har været den samme på de andre Pixelinespil, som jeg har testet.
+
+Spillene er testet på:
+
+HP Pavilion A6541 fra 2008, Nvidia 9500 GS, AMD Phenom 8450 processor - 4 gb ram. Med Ubuntu 10.04 LTS/64 bit.
+
+Gå tilbage til oversigten over kapitler
+
+Wine
+
+Wine er et program som gør det muligt at kører "windows" programmer og spil i Ubuntu, man kan læse mere om Wine her
+
+Først skal man hente og installere programmet Wine, gå ind i Programmer-&gt;Tilbehør-&gt;Terminal og indsæt:
+
+sudo apt-get install wine &amp;&amp; sudo wget http://www.kegel.com/wine/winetricks &amp;&amp; sh winetricks allcodecs
+
+Efter at wine er installeret skal det configureres, gå ind i Programmer-&gt;Wine-&gt;Configure wine.
+
+Der kommer nu et vindue med mulighed for at configurere wine, som standard er wine sat til xp, så tryk OK.
+
+Derefter får man et nyt virtuelt drev i Programmer-&gt;Wine-&gt;Browse c: drive.
+
+I de fleste tilfælde virker spillene når wine er konfigureret til xp, men hvis spillene ikke starter, er der også mulighed for at konfigurere wine til Vista eller Windovs7.
+
+Gå ind i Programmer-&gt;Wine-&gt;Configure wine:
+
+Skift til vista som det er vist på billedet og vælg "OK".
+
+Gå tilbage til oversigten over kapitler
+
+Mappe opbygning
+
+Gå ind i Programmer-&gt;Wine-&gt;Browse c:\ og åben Wine med et ”venstreklik”:
+
+Det i her inde i Wine, at man skal lave en mappe, kald den for Pixeline.
+
+I Pixelinemappen laver man en mappe, kald den for Pixeline engelsk:
+
+Gå tilbage til oversigten over kapitler
+
+Kopier spillet fra cd og ind i Wine
+
+Man skal åbne installations cd´en, og kopiere alle filerne som er på den, over i den mappe i Wine, som vi kaldte Pixeline engelsk, dette gøres som en helt normal kopiering, som man vil gøre, hvis man laver en kopi af Feks. en fotomappe. (se billederne herunder).
+
+Pixeline engelsk cd:
+
+Under kopiering:
+
+Og her det færdige resultat:
+
+Gå tilbage til oversigten over kapitler
+
+Start af exefiler
+
+I mappen Pixeline engelsk:
+
+Er her nu en exe fil som hedder "Installer Pixeline.exe", det er den exe fil som skal bruges til installationen.
+
+Højreklik på exe-filen, vælg Egenskaber-&gt;Rettigheder og marker i "Udførsel" Tillad kørsel af filen som et program.
+
+Det samme gælder hvis ikonet til spillet (efter installation) ikke vil starte det op.
+
+Nu er her 2 måder at komme videre på:
+
+1:
+
+Dobbeltklik på exe filen, herefter starter installationen.
+
+Hvis det ikke starter, skal man højreklikke på exefilen og vælge "Åben med andet program" og bagefter vælge Wine, tryk derefter på åben.
+
+Under installeringen af spillet, kommer en wizard med med mulighed for at vælge hvor man vil installere, her plejer jeg selv at vælge "c:\program files".
+
+Efter installering kommer henvisningen (genvejen) i Steder-&gt;Hjemmemappe :
+
+2:
+
+Spillet skal køres direkte fra den exe fil, der er i den mappe der hedder Pixeline engelsk, dette er ikke tilfælde med Pixeline engelsk, men det er her man skal starte de spil, der er mærket med "exe" i guiden, hvis man dobbeltklikker på denne exe fil, kan man køre spillet direkte:
+
+Gå tilbage til oversigten over kapitler
+
+Spilliste med testede spil
+
+Følgende spil er testet og virker, men husk at den originale cd skal være i drevet, når man vil spille dem !
+
+Hotel Skrottenborg
+
+Drager over Pixieland
+
+Vejr og vind med samme sind
+
+Kongekampen
+
+Det lille hospital
+
+Vejr og vind med samme sind
+
+Magi i pixieland
+
+Det magiske bibliotek
+
+Danmark på spil
+
+Dyrequizzen
+
+Dinosauer
+
+Rejsen til jordens indre
+
+Matematik
+
+Matematik 2
+
+Traffiksikker
+
+I det vilde westen
+
+Pixieland
+
+Naturfag
+
+Activity
+
+kong gulerod
+
+Engelsk 1
+
+Learning English
+
+Fuld af fis og ballade
+
+Lær at stave
+
+Dansk
+
+Dansk 2
+
+Kaj og andrea - i højeste gear
+
+Bamse -spil og leg
+
+Flunkerne - på månen
+
+Flunkerne - kaos og kalypso
+
+Flunkerne -Superskurke
+
+Syng lær og leg..............(*exe)
+
+Hulen i træet.................(*exe)
+
+På bedstemors loft.........(*exe - *fm)
+
+I sommerhuset...............(*exe - *fm)
+
+Huset i eventyrskoven.....(*exe - *fm)
+
+Hvis der ikke er nogen anmærkninger ud for spillet, virker alt Incl. henvisninger (genveje).
+
+*fm betyder: at der kommer en fejlmelding, som er lidt irriterene, men kan springes over.
+
+*exe betyder: at spillet skal startes direkte på exe filen.
+
+Gå tilbage til oversigten over kapitler
+
+Spar harddisk plads efter installering af spillene
+
+Under installeringen af spillene kommer der nye filer i Programmer-&gt;Wine-&gt;Browse c:\-&gt;Program files, derfor er den mappe der er nævnt i guiden som ”Pixeline engelsk”, blevet unødvendig og kan slettes efter at installeringen er færdig, hvilket er en god mulighed for at spare plads på harddisken, dette gælder for følgende spil:
+
+Hotel Skrottenborg
+
+Drager over Pixieland
+
+Vejr og vind med samme sind
+
+Kongekampen
+
+Det lille hospital
+
+Vejr og vind med samme sind
+
+Magi i pixieland
+
+Det magiske bibliotek
+
+Danmark på spil
+
+Dyrequizzen
+
+Dinosauer
+
+Rejsen til jordens indre
+
+Matematik
+
+Matematik 2
+
+Traffiksikker
+
+I det vilde westen
+
+Pixieland
+
+Naturfag
+
+Activity
+
+kong gulerod
+
+Engelsk 1
+
+Learning English
+
+Fuld af fis og ballade
+
+Lær at stave
+
+Dansk
+
+Dansk 2
+
+Kaj og andrea - i højeste gear
+
+Bamse -spil og leg
+
+Flunkerne - på månen
+
+Flunkerne - kaos og kalypso
+
+Flunkerne -Superskurke
+
+Man kan slette mappen der i guiden hedder Pixeline engelsk, ved at gå ind i Wine og smide den i papirkurven, men der er stor sandsynlighed for, at man derefter ikke kan tømme papirkurven og slette filerne, disse kan i stedet for fjernes fra papirkurven, ved at køre denne kommando i Programmer-&gt;Tilbehør-&gt;Terminal:
+
+sudo rm -rf .local/share/Trash/files/*
+
+Bagefter virker papirkurven helt normalt igen.
+
+Gå tilbage til oversigten over kapitler
+
+Support til denne guide :
+
+Hvis man oplever problemer under install af spillene, kan dette beskrive i denne tråd i Ubuntudanmark.dk , så vil jeg (eller en af de andre i forum) forsøge at hjælpe med dette.
