@@ -1,5 +1,7 @@
 # Pixeline Skolehjælp - Dansk – Pixeline får det sidste ord
 
+![Front](front.jpg)
+
 ## Krav
 
 For ikke at opleve en sort kasse omkring musemarkøren, skal Pixeline bruge Wine version 7.0.
