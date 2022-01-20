@@ -39,7 +39,7 @@ script:
   - task:
       arch: win32
       executable: $DISC/setup.exe 
-      description: <F11>'Installere Spillet
+      description: 'Installere Spillet
       
         -------------------------------
         
