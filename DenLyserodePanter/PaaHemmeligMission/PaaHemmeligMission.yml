@@ -6,9 +6,9 @@ runner: wine
 
 script:
   files:
-  - imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/loaddisk.sh
-  - imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/unloaddisk.sh
-  - imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/DenLyserodePanter/PaaHemmeligMission/config
+  - imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/loaddisk.sh
+  - imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/unloaddisk.sh
+  - imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/config
   
   game:
     exe: $GAMEDIR/drive_c/PANTER/pptp.exe

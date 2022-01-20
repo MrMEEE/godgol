@@ -1,5 +1,0 @@
-# Set to 1 to enable load of an image before the game starts and unload after
-ENABLE="0"
-
-# Image path
-IMAGE="./PANTER.iso"
