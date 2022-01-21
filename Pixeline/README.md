@@ -8,10 +8,10 @@ Spil med Pixeline.
   *  [Pixeline: og - hulen I træet (1996)](HulenITraet)
   *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
   *  [Pixeline: på bedstemors loft (1997)](BedstemorsLoft)
+  *  [Pixeline: - og huset i eventyrskoven (1998)](HusetIEventyrskoven)
 
 ## Komplet Liste
 
-  *  Pixeline: - og huset i eventyrskoven (1998)
   *  Pixeline: i sommerhuset (1999)
   *  Pixeline: for fulde sejl (2000)
   *  Pixeline: fuld af fis Og ballade (2001)
