@@ -5,11 +5,11 @@ Spil med Pixeline.
 ## Fungerende Spil
 
   *  [Pixeline: - Syng, leg og lær (1994)](SyngLegLaer)
+  *  [Pixeline: og - hulen I træet (1996)](HulenITraet)
   *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
 
 ## Komplet Liste
 
-  *  Pixeline: og - hulen I træet (1996)
   *  Pixeline: på bedstemors loft (1997)
   *  Pixeline: - og huset i eventyrskoven (1998)
   *  Pixeline: i sommerhuset (1999)

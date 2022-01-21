@@ -37,8 +37,3 @@ Det er ikke lykkedes mig at få versionen fra 1996 til at virke. Installationen 
 
 Versionen fra opsamlingssættet virker dog upåklageligt. Samtidig kræver versionen fra opsamlingssættet ikke at CD'en er i når man skal spille. Gætter på at alle kopibeskyttelser er fjernet for at få spillet til at virke på nyere versioner af Windows (og heldigvis også Linux).
 
-## Automount af CD image
-
-Hvis du ønsker at få et cd image monteret/afmonteret automatisk når spillet
-starter/lukkes, så kig i config filen i spillets mappe, typisk
-/home/<bruger>/Games/pixeline-syng-leg-og-lr/
