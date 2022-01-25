@@ -91,7 +91,7 @@ Stor tak til Christian Arvai, der for år tilbage lavede dokumentation om hvorda
   - På sigt vil Pixeline og sikkert flere andre kunne køre native (uden WINE) på Linux
 
 * https://bugs.winehq.org/show_bug.cgi?id=51296
-  - WINE bug der rammer mangle af de gamle spil, den er for nyligt fixet.
+  - WINE bug der rammer mange af de gamle spil, den er for nyligt fixet. Dette betyder dog at de fleste af spillene kræver WINE 7.0
 
 ## Downloads
 
