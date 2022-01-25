@@ -6,12 +6,12 @@ Spil med Pixeline.
 
   *  [Pixeline: - Syng, leg og lær (1994)](SyngLegLaer)
   *  [Pixeline: og - hulen I træet (1996)](HulenITraet)
-  *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
   *  [Pixeline: på bedstemors loft (1997)](BedstemorsLoft)
   *  [Pixeline: - og huset i eventyrskoven (1998)](HusetIEventyrskoven)
   *  [Pixeline: i sommerhuset (1999)](ISommerhuset)
   *  [Pixeline: for fulde sejl (2000)](ForFuldeSejl)
   *  [Pixeline: fuld af fis Og ballade (2001)](FisOgBallade)
+  *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
 
 ## Komplet Liste
 
