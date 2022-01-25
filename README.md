@@ -85,7 +85,7 @@ Stor tak til Christian Arvai, der for år tilbage lavede dokumentation om hvorda
 
 * https://wiki.winehq.org/Useful_Registry_Keys
 * https://ubuntudanmark.dk/forum/viewtopic.php?f=32&t=2759&start=1 
-  - Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
+  - Reference til: [Christan Arvai's Pixeline Guide](Referencer/Pixelineguide) 
 
 * https://www.scummvm.org/news/20210817/
   - På sigt vil Pixeline og sikkert flere andre kunne køre native (uden WINE) på Linux
