@@ -88,7 +88,10 @@ Stor tak til Christian Arvai, der for år tilbage lavede dokumentation om hvorda
   - Hvis nogen har en kopi af denne Pixeline Guide, så hører jeg meget gerne om det
 
 * https://www.scummvm.org/news/20210817/
-  - På sigt vil Pixiline og sikkert flere andre kunne køre native (uden WINE) på Linux
+  - På sigt vil Pixeline og sikkert flere andre kunne køre native (uden WINE) på Linux
+
+* https://bugs.winehq.org/show_bug.cgi?id=51296
+  - WINE bug der rammer mangle af de gamle spil, den er for nyligt fixet.
 
 ## Downloads
 
