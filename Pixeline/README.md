@@ -10,10 +10,10 @@ Spil med Pixeline.
   *  [Pixeline: på bedstemors loft (1997)](BedstemorsLoft)
   *  [Pixeline: - og huset i eventyrskoven (1998)](HusetIEventyrskoven)
   *  [Pixeline: i sommerhuset (1999)](ISommerhuset)
+  *  [Pixeline: for fulde sejl (2000)](ForFuldeSejl)
 
 ## Komplet Liste
 
-  *  Pixeline: for fulde sejl (2000)
   *  Pixeline: fuld af fis Og ballade (2001)
   *  Pixeline: Kong Gulerod (2002)
   *  Pixeline: I det vilde Westen (2003)
