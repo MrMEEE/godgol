@@ -12,17 +12,17 @@ Spil med Pixeline.
   *  [Pixeline: for fulde sejl (2000)](ForFuldeSejl)
   *  [Pixeline: fuld af fis Og ballade (2001)](FisOgBallade)
   *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
+  *  [Pixeline: Kong Gulerod (2002)](KongGulerod)
+  *  [Pixeline: I det vilde vesten (2003)](DetVildeVesten)
+  *  [Pixeline: Hotel Skrottenborg (2004)](HotelSkrottenborg)
 
 ## Komplet Liste
 
-  *  Pixeline: Kong Gulerod (2002)
-  *  Pixeline: I det vilde Westen (2003)
-  *  Pixeline: Hotel Skrottenborg (2004)
   *  Pixeline: Stjernestøv (2005)
   *  Pixeline: i Pixieland (2006)
   *  Pixeline: Magi i Pixieland (2007)
   *  Pixeline: Drager over Pixieland (2008)
-  *  Pixeline: Jungleskatten (2010)[B
+  *  Pixeline: Jungleskatten (2010)
   *  Pixeline Skolehjælp: Matematik – Pixeline regner den ud (2005)
   *  Pixeline Skolehjælp: Naturfag – Lær om dyr og planter (2005)
   *  Pixeline Skolehjælp: Engelsk – My name is Pixeline (2005)
