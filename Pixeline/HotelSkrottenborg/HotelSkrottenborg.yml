@@ -1,0 +1,55 @@
+name: Pixeline - Hotel Skrottenborg
+game_slug: pixelinehotelskrottenborg
+version: Installer
+slug: pixelinehotelskrottenborg
+runner: wine
+
+script:
+  game:
+    exe: $GAMEDIR/drive_c/Program Files/Program Files/Pixeline/Pixeline - Hotel Skrottenborg/Pixeline - Hotel Skrottenborg/Pixeline - Hotel skrottenborg.exe
+    prefix: $GAMEDIR/
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Program Files/Program Files/Pixeline/Pixeline - Hotel Skrottenborg/Pixeline - Hotel Skrottenborg
+
+  installer:
+  - insert-disc:
+      requires: Installer Pixeline.exe
+    
+  - task:
+      arch: win32
+      description: Creating WINE prefix
+      install_gecko: false
+      install_mono: false
+      name: create_prefix
+      prefix: $GAMEDIR
+
+  - task:
+      description: Enable Windows 98 compatibility mode
+      key: Version
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine
+      prefix: $GAMEDIR
+      value: win98
+
+  - task:
+      arch: win32
+      executable: $DISC/Installer Pixeline.exe
+      description: 'Installere Spillet
+      
+        -------------------------------
+        
+        Bare installer på standard lokationen..
+        
+        '
+      name: wineexec
+      working_dir: $DISC
+
+  system: 
+    xephyr: 16bpp
+    xephyr_resolution: 800x600
+    reset_desktop: true
+    resolution: 800x600
+ 
+  wine: 
+    esync: false
+    version: lutris-ge-lol-7.0-1-x86_64
