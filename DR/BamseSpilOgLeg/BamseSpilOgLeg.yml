@@ -1,7 +1,7 @@
-name: Bamses Julerejse
-game_slug: bamsesjulerejse
+name: Bamses - Spil og Leg
+game_slug: bamsespilogleg
 version: Installer
-slug: bamsesjulerejse
+slug: bamsespilogleg
 runner: wine
 
 script:
@@ -11,14 +11,14 @@ script:
   - imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/config
 
   game:
-    exe: $GAMEDIR/drive_c/Program Files/Bamses Julerejse/Bamses Julerejse.exe
+    exe: $GAMEDIR/drive_c/Program Files/Bamse/Bamse 1/Bamse - spil og leg.exe
     prefix: $GAMEDIR/
     arch: win32
-    working_dir: $GAMEDIR/drive_c/Program Files/Bamses Julerejse
+    working_dir: $GAMEDIR/drive_c/Program Files/Bamse/Bamse 1
 
   installer:
   - insert-disc:
-      requires: bamsesjulerejse_installer.exe
+      requires: Install.exe
     
   - task:
       arch: win32
@@ -38,7 +38,7 @@ script:
 
   - task:
       arch: win32
-      executable: $DISC/bamsesjulerejse_installer.exe
+      executable: $DISC/Install.exe
       name: wineexec
       working_dir: $DISC
 
@@ -62,6 +62,8 @@ script:
   - chmodx: $GAMEDIR/unloaddisk.sh
   
   system: 
+    xephyr: 16bpp
+    xephyr_resolution: 800x600 
     reset_desktop: true
     resolution: 800x600
     prelaunch_command: $GAMEDIR/loaddisk.sh
