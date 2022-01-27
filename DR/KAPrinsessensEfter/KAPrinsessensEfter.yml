@@ -1,0 +1,77 @@
+name: Kaj og Andrea - Prinsessens Efterfølger
+game_slug: kajogandreaprinsessensefter
+version: Installer
+slug: kajogandreaprinsessensefter
+runner: wine
+
+script:
+  game:
+    exe: $GAMEDIR/drive_c/KajogAndrea/Prinsessens.exe
+    prefix: $GAMEDIR/
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/KajogAndrea
+
+  installer:
+  - insert-disc:
+      requires: Prinsessens.exe
+    
+  - task:
+      arch: win32
+      description: Creating WINE prefix
+      install_gecko: false
+      install_mono: false
+      name: create_prefix
+      prefix: $GAMEDIR
+
+  - task:
+      description: Enable Windows 98 compatibility mode
+      key: Version
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine
+      prefix: $GAMEDIR
+      value: win98
+
+
+  - execute:
+      command: mkdir -p '$GAMEDIR/drive_c/KajogAndrea/director'
+      description: Creating installation directory
+
+  - execute:
+      command: mkdir -p '$GAMEDIR/drive_c/KajogAndrea/xtras'
+      description: Creating installation directory
+
+  - copy:
+      src: $DISC/xtras
+      dst: $GAMEDIR/drive_c/KajogAndrea/xtras/
+
+  - copy:
+      src: $DISC/director
+      dst: $GAMEDIR/drive_c/KajogAndrea/director/
+
+  - copy:
+      src: $DISC/Autorun.inf
+      dst: $GAMEDIR/drive_c/KajogAndrea/
+
+  - copy:
+      src: $DISC/Prinsessens.exe
+      dst: $GAMEDIR/drive_c/KajogAndrea/
+  
+  - copy:
+      src: $DISC/prinsessens.ini
+      dst: $GAMEDIR/drive_c/KajogAndrea/
+
+  - copy:
+      src: $DISC/Lingo.ini
+      dst: $GAMEDIR/drive_c/KajogAndrea/
+
+
+
+  system: 
+    #xephyr: 16bpp
+    #xephyr_resolution: 800x600
+    reset_desktop: true
+    resolution: 800x600
+ 
+  wine: 
+    esync: false
+    version: lutris-ge-lol-7.0-1-x86_64
