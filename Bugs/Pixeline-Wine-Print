@@ -1,0 +1,99 @@
+13381.563:00f8:00fc:Call ntdll.NtClose(00000108) ret=7b052a32
+00fc: close_handle( handle=0108 )
+00fc: close_handle() = 0
+13381.563:00f8:00fc:Ret  ntdll.NtClose() retval=00000000 ret=7b052a32
+13381.563:00f8:00fc:Ret  KERNEL32.CloseHandle() retval=00000001 ret=663d9a3f
+13381.563:00f8:00fc:trace:winspool:ScheduleJob (00000001, 2)
+13381.563:00f8:00fc:Call KERNEL32.CreateFileW(00361530 L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",80000000,00000001,00000000,00000003,00000000,00000000) ret=663d93a6
+13381.563:00f8:00fc:trace:file:CreateFileW L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" GENERIC_READ FILE_SHARE_READ  creation 3 attributes 0x0
+13381.563:00f8:00fc:Call ntdll.RtlRunOnceExecuteOnce(7b0bcce0,7b078750,00000000,00000000) ret=7b0756e8
+13381.563:00f8:00fc:Ret  ntdll.RtlRunOnceExecuteOnce() retval=00000000 ret=7b0756e8
+13381.563:00f8:00fc:Call ntdll.wcscpy(0021e658,7b0bcd14 L"Service Pack 1") ret=7b07be1f
+13381.563:00f8:00fc:Ret  ntdll.wcscpy() retval=0021e658 ret=7b07be1f
+13381.563:00f8:00fc:Call ntdll.RtlDosPathNameToNtPathName_U(00361530 L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021e810,00000000,00000000) ret=7b016213
+13381.563:00f8:00fc:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021E810,00000000,00000000)
+13381.563:00f8:00fc:trace:file:RtlGetFullPathName_U (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" 520 0021E4D8 00000000)
+13381.563:00f8:00fc:trace:heap:HEAP_lfh_allocate heap 00240000, flags 70000062, size 6a, out 0021E42C.
+13381.563:00f8:00fc:trace:heap:LFH_block_initialize block 00591920, flags 70000062, old_size 0, new_size 6a, class_size a0, ptr 00591930
+13381.563:00f8:00fc:trace:heap:RtlAllocateHeap (00240000,70000062,0000006a), status 0, ptr 00591930
+13381.563:00f8:00fc:Ret  ntdll.RtlDosPathNameToNtPathName_U() retval=00000001 ret=7b016213
+13381.563:00f8:00fc:Call ntdll.NtCreateFile(0021e80c,80100080,0021e82c,0021e818,00000000,00000000,00000001,00000001,00000060,00000000,00000000) ret=7b01632f
+13381.563:00f8:00fc:trace:file:NtCreateFile handle=0x21e80c access=80100080 name=L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" objattr=00000040 root=(nil) sec=(nil) io=0x21e818 alloc_size=(nil) attr=00000000 sharing=00000001 disp=1 options=00000060 ea=(nil).0x00000000
+13381.563:00f8:00fc:trace:file:nt_to_unix_file_name_no_root L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" -> "/home/mj/Games/pixelinesyngleglaer1/dosdevices/c:/windows/system32/spool/printers/00002.SPL"
+00fc: create_file( access=80100080, sharing=00000001, create=1, options=00000060, attrs=00000000, objattr={rootdir=0000,attributes=00000040,sd={},name=L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL"}, filename="/home/mj/Games/pixelinesyngleglaer1/dosdevices/c:/windows/system32/spool/printers/00002.SPL" )
+00fc: create_file() = 0 { handle=0108 }
+13381.563:00f8:00fc:Ret  ntdll.NtCreateFile() retval=00000000 ret=7b01632f
+13381.563:00f8:00fc:Call ntdll.RtlFreeUnicodeString(0021e810) ret=7b016372
+13381.563:00f8:00fc:trace:heap:HEAP_lfh_free heap 00240000, flags 70000062, ptr 00591930.
+13381.563:00f8:00fc:trace:heap:RtlFreeHeap (00240000,70000062,00591930), status 0
+13381.563:00f8:00fc:Ret  ntdll.RtlFreeUnicodeString() retval=00000001 ret=7b016372
+13381.563:00f8:00fc:trace:file:CreateFileW returning 00000108
+13381.563:00f8:00fc:Ret  KERNEL32.CreateFileW() retval=00000108 ret=663d93a6
+13381.563:00f8:00fc:Call KERNEL32.IsBadStringPtrW(003726d0,ffffffff) ret=663c3c70
+13381.563:00f8:00fc:Ret  KERNEL32.IsBadStringPtrW() retval=00000000 ret=663c3c70
+13381.563:00f8:00fc:Call KERNEL32.IsBadStringPtrW(00361530,ffffffff) ret=663c3c70
+13381.563:00f8:00fc:Ret  KERNEL32.IsBadStringPtrW() retval=00000000 ret=663c3c70
+13381.563:00f8:00fc:trace:winspool:ScheduleJob need to schedule job 2 filename L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" to port L"CUPS:Brother_DCP-9045CDN"
+13381.563:00f8:00fc:Call ucrtbase.wcsncmp(003726d0 L"CUPS:Brother_DCP-9045CDN",663df888 L"FILE:",00000005) ret=663d93f3
+13381.563:00f8:00fc:Ret  ucrtbase.wcsncmp() retval=fffffffd ret=663d93f3
+13381.563:00f8:00fc:Call ucrtbase.isalpha(00000043) ret=663d9407
+13381.563:00f8:00fc:Ret  ucrtbase.isalpha() retval=00000001 ret=663d9407
+13381.563:00f8:00fc:Call ntdll.RtlDosPathNameToNtPathName_U(00361530 L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021ea88,00000000,00000000) ret=663d943c
+13381.563:00f8:00fc:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021EA88,00000000,00000000)
+13381.563:00f8:00fc:trace:file:RtlGetFullPathName_U (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" 520 0021E798 00000000)
+13381.563:00f8:00fc:trace:heap:HEAP_lfh_allocate heap 00240000, flags 70000062, size 6a, out 0021E6EC.
+13381.563:00f8:00fc:trace:heap:LFH_block_initialize block 00591920, flags 70000062, old_size 0, new_size 6a, class_size a0, ptr 00591930
+13381.563:00f8:00fc:trace:heap:RtlAllocateHeap (00240000,70000062,0000006a), status 0, ptr 00591930
+13381.563:00f8:00fc:Ret  ntdll.RtlDosPathNameToNtPathName_U() retval=00000001 ret=663d943c
+13381.563:00f8:00fc:Call advapi32.RegOpenKeyW(80000001,663df8b0 L"Software\\Wine\\Printing\\Spooler",0021ea7c) ret=663d9656
+13381.563:00f8:00fc:Call ntdll.RtlInitUnicodeString(0021e980,663df8b0 L"Software\\Wine\\Printing\\Spooler") ret=7b0585d1
+13381.563:00f8:00fc:Ret  ntdll.RtlInitUnicodeString() retval=0000003e ret=7b0585d1
+13381.563:00f8:00fc:Call ntdll.NtOpenKeyEx(0021ea7c,02000000,0021e988,00000000) ret=7b058604
+13381.563:00f8:00fc:trace:reg:NtOpenKeyEx (0x38,L"Software\\Wine\\Printing\\Spooler",2000000,0x21ea7c)
+00fc: open_key( parent=0038, access=02000000, attributes=00000000, name=L"Software\\Wine\\Printing\\Spooler" )
+00fc: open_key() = OBJECT_NAME_NOT_FOUND { hkey=0000 }
+13381.563:00f8:00fc:trace:reg:NtOpenKeyEx <- (nil)
+13381.563:00f8:00fc:Ret  ntdll.NtOpenKeyEx() retval=c0000034 ret=7b058604
+13381.563:00f8:00fc:Call ntdll.RtlNtStatusToDosError(c0000034) ret=7b058617
+13381.563:00f8:00fc:Ret  ntdll.RtlNtStatusToDosError() retval=00000002 ret=7b058617
+13381.563:00f8:00fc:Ret  advapi32.RegOpenKeyW() retval=00000002 ret=663d9656
+13381.563:00f8:00fc:Call ntdll.__wine_unix_call(0f7c9eed4,00000004,0021ea90) ret=663dbe4d
+13381.563:00f8:00fc:trace:file:nt_to_unix_file_name_no_root L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" -> "/home/mj/Games/pixelinesyngleglaer1/dosdevices/c:/windows/system32/spool/printers/00002.SPL"
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault code=c0000005 flags=0 addr=0xf7c9d373 ip=f7c9d373 tid=00fc
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault  info[0]=00000000
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault  info[1]=00000000
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault  eax=00000000 ebx=f7c9f000 ecx=7e735d33 edx=7e735d34 esi=0000003a edi=003726da
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault  ebp=0023fc38 esp=0023fbf0 cs=0023 ds=002b es=002b fs=0063 gs=006b flags=00010206
+13381.563:00f8:00fc:trace:seh:handle_syscall_fault returning to user mode ip=7bc0be5c ret=c0000005
+13381.563:00f8:00fc:Ret  ntdll.__wine_unix_call() retval=c0000005 ret=663dbe4d
+13381.563:00f8:00fc:Call ntdll.RtlFreeUnicodeString(0021ea88) ret=663d96a2
+13381.563:00f8:00fc:trace:heap:HEAP_lfh_free heap 00240000, flags 70000062, ptr 00591930.
+13381.563:00f8:00fc:trace:heap:RtlFreeHeap (00240000,70000062,00591930), status 0
+13381.563:00f8:00fc:Ret  ntdll.RtlFreeUnicodeString() retval=00000001 ret=663d96a2
+13381.563:00f8:00fc:Call KERNEL32.HeapFree(00240000,00000000,00000000) ret=663d9487
+13381.563:00f8:00fc:Ret  KERNEL32.HeapFree() retval=00000001 ret=663d9487
+13381.563:00f8:00fc:Call KERNEL32.CloseHandle(00000108) ret=663d9499
+13381.563:00f8:00fc:Call ntdll.NtClose(00000108) ret=7b052a32
+00fc: close_handle( handle=0108 )
+00fc: close_handle() = 0
+13381.563:00f8:00fc:Ret  ntdll.NtClose() retval=00000000 ret=7b052a32
+13381.563:00f8:00fc:Ret  KERNEL32.CloseHandle() retval=00000001 ret=663d9499
+13381.563:00f8:00fc:Call KERNEL32.DeleteFileW(00361530 L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL") ret=663d94a8
+13381.563:00f8:00fc:trace:file:DeleteFileW L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL"
+13381.563:00f8:00fc:Call ntdll.RtlDosPathNameToNtPathName_U(00361530 L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021e8a4,00000000,00000000) ret=7b017c7f
+13381.563:00f8:00fc:trace:file:RtlDosPathNameToNtPathName_U_WithStatus (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL",0021E8A4,00000000,00000000)
+13381.563:00f8:00fc:trace:file:RtlGetFullPathName_U (L"C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" 520 0021E5B8 00000000)
+13381.563:00f8:00fc:trace:heap:HEAP_lfh_allocate heap 00240000, flags 70000062, size 6a, out 0021E50C.
+13381.563:00f8:00fc:trace:heap:LFH_block_initialize block 00591920, flags 70000062, old_size 0, new_size 6a, class_size a0, ptr 00591930
+13381.563:00f8:00fc:trace:heap:RtlAllocateHeap (00240000,70000062,0000006a), status 0, ptr 00591930
+13381.563:00f8:00fc:Ret  ntdll.RtlDosPathNameToNtPathName_U() retval=00000001 ret=7b017c7f
+13381.563:00f8:00fc:Call ntdll.NtCreateFile(0021e8a0,00110000,0021e8b4,0021e8ac,00000000,00000000,00000007,00000001,00201040,00000000,00000000) ret=7b017d43
+13381.563:00f8:00fc:trace:file:NtCreateFile handle=0x21e8a0 access=00110000 name=L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" objattr=00000040 root=(nil) sec=(nil) io=0x21e8ac alloc_size=(nil) attr=00000000 sharing=00000007 disp=1 options=00201040 ea=(nil).0x00000000
+13381.563:00f8:00fc:trace:file:nt_to_unix_file_name_no_root L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL" -> "/home/mj/Games/pixelinesyngleglaer1/dosdevices/c:/windows/system32/spool/printers/00002.SPL"
+00fc: create_file( access=00110000, sharing=00000007, create=1, options=00201040, attrs=00000000, objattr={rootdir=0000,attributes=00000040,sd={},name=L"\\??\\C:\\windows\\system32\\spool\\PRINTERS\\00002.SPL"}, filename="/home/mj/Games/pixelinesyngleglaer1/dosdevices/c:/windows/system32/spool/printers/00002.SPL" )
+00fc: create_file() = 0 { handle=0108 }
+13381.563:00f8:00fc:Ret  ntdll.NtCreateFile() retval=00000000 ret=7b017d43
+13381.563:00f8:00fc:Call ntdll.NtClose(00000108) ret=7b017e7f
+00fc: close_handle( handle=0108 )
+00fc: close_handle() = 0
+

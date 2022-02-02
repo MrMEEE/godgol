@@ -41,6 +41,16 @@ cdemu load 0 <*.mds fil>
 
 Kig i mapperne :)
 
+## Generelle Bugs
+
+Pixeline-spillene (og måske flere) kan jeg ikke få til at printe (malebøger mm.)
+
+Jeg har forfulgt problemet så langt at jeg kan se at der kommer en fejl (c0000005, vist noget adgang), når printet skal fra Wine til Linux.. 
+
+Det ser ud til at Spool-filen bliver lavet af spillet, men derefter fejler med at kunne blive transportet over til Linux udskrivningssystem (CUPS)...
+
+Hvis der er nogen der har gode forslag, så sig endelig til.. Fejlen kan ses her: (Pixeline-Wine-Print)
+
 
 ## Licenser
 
