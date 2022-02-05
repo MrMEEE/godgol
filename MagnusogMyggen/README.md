@@ -4,11 +4,10 @@ Spil med Magnus og Myggen.
 
 ## Fungerende Spil
 
-  *  [Pixeline Skolehjælp: Dansk – Pixeline får det sidste ord (2005)](SidsteOrd)
+  * [Leg og Lær med Magnus og Myggen (1996)](MagnusogMyggen)
 
 ## Komplet Liste
 
-  * Leg og Lær med Magnus og Myggen (1996)
   * Den Store Skattejagt (1997)
   * Skumlesens Hævn (1998)
   * Skumlesens Skygge (1999)
