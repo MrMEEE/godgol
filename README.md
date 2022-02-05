@@ -49,7 +49,7 @@ Jeg har forfulgt problemet så langt at jeg kan se at der kommer en fejl (c00000
 
 Det ser ud til at Spool-filen bliver lavet af spillet, men derefter fejler med at kunne blive transportet over til Linux udskrivningssystem (CUPS)...
 
-Hvis der er nogen der har gode forslag, så sig endelig til.. Fejlen kan ses her: (Pixeline-Wine-Print)
+Hvis der er nogen der har gode forslag, så sig endelig til.. Fejlen kan ses her: [Pixeline Print Fejl](Bugs/Pixeline-Wine-Print)
 
 
 ## Licenser
