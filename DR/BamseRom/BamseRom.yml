@@ -36,10 +36,18 @@ script:
       command: mkdir -p '$GAMEDIR/drive_c/Bamse/aktiviteter'
       description: Creating installation directory
 
+  - execute:
+      command: mkdir -p '$GAMEDIR/drive_c/Bamse/Xtras'
+      description: Creating installation directory
+
   - copy:
       src: $DISC/aktiviteter
       dst: $GAMEDIR/drive_c/Bamse/aktiviteter/
 
+  - copy:
+      src: $DISC/Xtras
+      dst: $GAMEDIR/drive_c/Bamse/Xtras/
+ 
   - copy:
       src: $DISC/Autorun.inf
       dst: $GAMEDIR/drive_c/Bamse/
