@@ -29,12 +29,12 @@ script:
       prefix: $GAMEDIR
 
   - task:
-      description: Enable Windows 98 compatibility mode
+      description: Enable Windows XP compatibility mode
       key: Version
       name: set_regedit
       path: HKEY_CURRENT_USER\Software\Wine
       prefix: $GAMEDIR
-      value: win98
+      value: winxp
 
   - task:
       arch: win32
