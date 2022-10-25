@@ -1,0 +1,81 @@
+name: Askepots Drømmehus
+game_slug: askepotsdrommehus
+version: Installer
+slug: askepotsdrommehus
+runner: wine
+
+script:
+  files:
+  - imageloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/loaddisk.sh
+  - imageunloadscript: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/unloaddisk.sh
+  - imageconfigfile: https://raw.githubusercontent.com/MrMEEE/godgol/main/Common/Scripts/config
+
+  game:
+    exe: $GAMEDIR/drive_c/Program Files/Disney Interactive/Disneys Askepots drømmehus/dollhouse2.exe
+    prefix: $GAMEDIR/
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Program Files/Disney Interactive/Disneys Askepots drømmehus
+
+  installer:
+    
+  - task:
+      arch: win32
+      description: Creating WINE prefix
+      install_gecko: false
+      install_mono: false
+      name: create_prefix
+      prefix: $GAMEDIR
+
+  - task:
+      description: Enable Windows 98 compatibility mode
+      key: Version
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine
+      prefix: $GAMEDIR
+      value: win98
+  
+  - insert-disc:
+      requires: setup.exe
+
+  - task:
+      arch: win32
+      executable: $DISC/setup.exe
+      description: 'Installere Spillet
+      
+        -------------------------------
+        
+        Bare installer på standard lokationen..
+        
+        '
+      name: wineexec
+      working_dir: $DISC
+
+  - move:
+      description: Installing ISO/Image load script
+      dst: $GAMEDIR/loaddisk.sh
+      src: imageloadscript
+
+  - move:
+      description: Installing ISO/Image unload script
+      dst: $GAMEDIR/unloaddisk.sh
+      src: imageunloadscript
+
+  - move:
+      description: Installing ISO/Image config file
+      dst: $GAMEDIR/config
+      src: imageconfigfile
+
+  - chmodx: $GAMEDIR/loaddisk.sh
+
+  - chmodx: $GAMEDIR/unloaddisk.sh
+  
+  system: 
+    reset_desktop: true
+    resolution: 1024x768
+    prelaunch_command: $GAMEDIR/loaddisk.sh
+    prelaunch_wait: true
+    postexit_command: $GAMEDIR/unloaddisk.sh
+ 
+  wine: 
+    esync: false
+    version: lutris-7.2-x86_64

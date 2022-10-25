@@ -115,11 +115,13 @@
 * Opdag Rummet med Mik Mekanik
 * Den lyserøde panter - På hemmelig mission
 
+# Disney
+
+* Askepots Drømmehus
+
 ## Mangler
 
-* Pixeline: i Pixieland (2006)
 * Pixeline: Magi i Pixieland (2007)
-* Pixeline: Drager over Pixieland (2008)
 * Pixeline Skolehjælp: Naturfag – Lær om dyr og planter (2005)
 * Pixeline Skolehjælp: Engelsk 2 – Pixeline goes to London (2006)
 * Pixeline Skolehjælp: Lær om Geografi – Danmark på spil (2007)
